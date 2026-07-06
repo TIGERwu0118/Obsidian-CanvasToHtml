@@ -1,6 +1,10 @@
 # Obsidian-CanvasToHtml
 
+[简体中文](./README.zh-CN.md) | **English**
+
 > Export an Obsidian **`.canvas`** into a portable, self-contained HTML bundle — with an `attachments/` folder carrying every referenced note and image.
+
+![Demo export](./examples/demo-screenshot.png)
 
 ![Demo export](./examples/demo-screenshot.png)
 
@@ -45,11 +49,11 @@ This repo *is* the skill. Clone it into any skill discovery directory:
 
 ```bash
 # user-wide (available in every project)
-git clone https://github.com/<you>/Obsidian-CanvasToHtml.git \
+git clone https://github.com/TIGERwu0118/Obsidian-CanvasToHtml.git \
   ~/.zcode/skills/Obsidian-CanvasToHtml
 
 # or project-local
-git clone https://github.com/<you>/Obsidian-CanvasToHtml.git \
+git clone https://github.com/TIGERwu0118/Obsidian-CanvasToHtml.git \
   ./.zcode/skills/Obsidian-CanvasToHtml
 ```
 
@@ -60,7 +64,7 @@ Then just say *"export this canvas to html"* and the skill triggers. See [`SKILL
 No skill loader needed — the converter is a plain CLI:
 
 ```bash
-git clone https://github.com/<you>/Obsidian-CanvasToHtml.git
+git clone https://github.com/TIGERwu0118/Obsidian-CanvasToHtml.git
 cd Obsidian-CanvasToHtml
 pip install -r requirements.txt
 python scripts/canvas_to_html.py path/to/my.canvas
@@ -134,7 +138,8 @@ The viewport is an absolutely-positioned node layer transformed by a single CSS 
 ```
 Obsidian-CanvasToHtml/
 ├── SKILL.md                       # skill definition (trigger + agent workflow)
-├── README.md                      # you are here
+├── README.md                      # English (you are here)
+├── README.zh-CN.md                # 简体中文
 ├── LICENSE                        # MIT
 ├── requirements.txt               # markdown, pymdown-extensions, Pygments
 └── scripts/
