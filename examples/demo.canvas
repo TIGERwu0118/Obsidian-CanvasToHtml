@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"g1","type":"group","x":-40,"y":-80,"width":920,"height":560,"color":"4","label":"Demo Canvas"},
+		{"id":"t1","type":"text","text":"# Canvas → HTML\n\nThis canvas was exported to a **portable HTML** bundle.\n\n- self-contained\n- no server needed\n- works offline","x":0,"y":0,"width":280,"height":170,"color":"4"},
+		{"id":"t2","type":"text","text":"## Features\n\n- pan: middle-drag\n- zoom: wheel\n- move card: left-drag\n- resize: drag corner","x":320,"y":0,"width":240,"height":170,"color":"3"},
+		{"id":"t3","type":"text","text":"## Markdown card\n\nSupports tables:\n\n| a | b |\n|---|---|\n| 1 | 2 |\n\nAnd `code`, ~~strike~~, [[links]].","x":600,"y":0,"width":260,"height":170,"color":"2"},
+		{"id":"t4","type":"text","text":"## Output\n\n```\nbundle_html/\n├── index.html\n└── attachments/\n```","x":160,"y":240,"width":280,"height":180,"color":"5"},
+		{"id":"t5","type":"text","text":"Edges redraw live when you drag a card, and labels track the midpoint of the curve.","x":480,"y":260,"width":320,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"t1","fromSide":"right","toNode":"t2","toSide":"left","label":"features"},
+		{"id":"e2","fromNode":"t2","fromSide":"right","toNode":"t3","toSide":"left","label":"md"},
+		{"id":"e3","fromNode":"t1","fromSide":"bottom","toNode":"t4","toSide":"top","label":"builds"},
+		{"id":"e4","fromNode":"t3","fromSide":"bottom","toNode":"t5","toSide":"top","label":"live edges"}
+	]
+}
